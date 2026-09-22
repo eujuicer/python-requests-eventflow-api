@@ -1,4 +1,4 @@
-# Request — Exercices Python `requests`
+# Python requests — API EventFlow
 
 Dépôt d'entraînement : interroger et exploiter l'API **EventFlow** en Python
 avec la librairie [`requests`](https://requests.readthedocs.io/).
