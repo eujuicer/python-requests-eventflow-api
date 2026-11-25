@@ -1,55 +1,55 @@
-# Python requests — API EventFlow
+# Python requests — EventFlow API
 
-Dépôt d'entraînement : interroger et exploiter l'API **EventFlow** en Python
-avec la librairie [`requests`](https://requests.readthedocs.io/).
+Practice repository: querying and working with the **EventFlow** API in Python
+using the [`requests`](https://requests.readthedocs.io/) library.
 
-## Prérequis
+## Prerequisites
 
 - Python 3.10+
-- L'API EventFlow doit tourner en local sur `http://localhost:8000`
-  (documentation Swagger : `http://localhost:8000/docs`)
+- The EventFlow API must be running locally at `http://localhost:8000`
+  (Swagger documentation: `http://localhost:8000/docs`)
 
 ## Installation
 
 ```bash
-# 1. Créer l'environnement virtuel
+# 1. Create the virtual environment
 python -m venv venv
 
-# 2. L'activer
+# 2. Activate it
 venv\Scripts\activate        # Windows
 source venv/bin/activate     # Mac / Linux
 
-# 3. Installer les dépendances
+# 3. Install the dependencies
 pip install -r requirement.txt
 ```
 
-Le terminal affiche `(venv)` en début de ligne quand l'environnement est actif.
-Pour en sortir : `deactivate`.
+The terminal shows `(venv)` at the start of the line when the environment is active.
+To leave it: `deactivate`.
 
-## Utilisation
+## Usage
 
 ```bash
 python main.py
 ```
 
-Pour lancer le corrigé des exercices J2 :
+To run the solutions of the Day 2 (J2) exercises:
 
 ```bash
 python exercices_j2.py
 ```
 
-## Contenu du dépôt
+## Repository contents
 
-| Fichier                    | Description                                              |
+| File                        | Description                                               |
 |-----------------------------|-----------------------------------------------------------|
-| `main.py`                   | Script d'exploration de l'API (requêtes GET, query params, path params) |
-| `exercices_j2.py`           | Corrigé des exercices J2 (niveaux 1 à 4, mission autonome, bonus) |
-| `J2_requests_cours.md`      | Cours : `requests` pour testeurs (Bruno → Python)          |
-| `J2_exercices_eleves.md`    | Énoncés des exercices J2                                   |
-| `requirement.txt`           | Dépendances Python du projet                                |
+| `main.py`                   | API exploration script (GET requests, query params, path params) |
+| `exercices_j2.py`           | Solutions of the Day 2 exercises (levels 1 to 4, solo mission, bonus) |
+| `J2_requests_cours.md`      | Course: `requests` for testers (Bruno → Python), in French |
+| `J2_exercices_eleves.md`    | Day 2 exercise statements, in French                       |
+| `requirement.txt`           | Python dependencies of the project                         |
 
 ## Notes
 
-- Le dossier `venv/` (ou équivalent) ne doit jamais être versionné — il est
-  déjà exclu via `.gitignore`.
-- Après ajout d'une dépendance : `pip freeze > requirement.txt`.
+- The `venv/` folder (or equivalent) must never be committed — it is
+  already excluded via `.gitignore`.
+- After adding a dependency: `pip freeze > requirement.txt`.
